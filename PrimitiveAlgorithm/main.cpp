@@ -27,10 +27,17 @@ void displayFunc() {
 	//colorTest();
 	//lineStippleTest();
 	//polygonModeTest();	
-	for (size_t i = 0; i < WIN_SIZE_W; i++)
-	{
-		setPixel(i, 100);
-	}
+	//for (size_t i = 0; i < WIN_SIZE_W; i++)
+	//{
+	//	setPixel(i, 100);
+	//}
+	//DAA(0, WIN_SIZE_W, 0, WIN_SIZE_H);
+
+	Bresenham(0, 200, 0, 200);
+	Bresenham(0, 200, 0, 100);
+	Bresenham(0, 200, 0, 400);
+	Bresenham(0, 200, 100, 0);
+	Bresenham(0, 200, 400, 0);
 
 	glFlush();
 
