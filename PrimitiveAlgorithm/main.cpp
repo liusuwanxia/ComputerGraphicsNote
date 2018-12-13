@@ -33,11 +33,13 @@ void displayFunc() {
 	//}
 	//DAA(0, WIN_SIZE_W, 0, WIN_SIZE_H);
 
-	Bresenham(0, 200, 0, 200);
-	Bresenham(0, 200, 0, 100);
-	Bresenham(0, 200, 0, 400);
-	Bresenham(0, 200, 100, 0);
-	Bresenham(0, 200, 400, 0);
+	drawWideLine(0, 200, 0, 200, 8);
+	drawWideLine(0, 200, 0, 100, 8);
+	drawWideLine(0, 200, 0, 400, 8);
+	drawWideLine(0, 200, 100, 0, 8);
+	drawWideLine(0, 200, 400, 0, 8);
+
+	circleMidpoGLint(100, 100, 50);
 
 	glFlush();
 
